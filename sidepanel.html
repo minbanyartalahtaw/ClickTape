@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Teach a Task</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="logo" src="icons/icon48.png" alt="" />
+        <h1>Teach a Task</h1>
+        <span id="status" class="status">Idle</span>
+      </header>
+
+      <section class="deck">
+        <div class="display">
+          <input id="name" type="text" placeholder="Untitled skill" autocomplete="off" spellcheck="false" />
+          <span class="counter"><span id="count">000</span> steps</span>
+        </div>
+        <div class="buttons">
+          <button id="record" class="rec"><span class="rec-dot"></span>Rec</button>
+          <button id="stop" disabled>Save</button>
+          <button id="discard" disabled>Discard</button>
+        </div>
+        <p id="error" class="error" hidden></p>
+      </section>
+
+      <section>
+        <h2>Steps</h2>
+        <ol id="steps" class="steps"></ol>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul id="skills" class="skills"></ul>
+      </section>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>
